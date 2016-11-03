@@ -1,0 +1,9 @@
+C:\Gábor\Programs\Clickcounter\Clickcounter\bin\Debug\Clickcounter.exe.config
+C:\Gábor\Programs\Clickcounter\Clickcounter\obj\Debug\Clickcounter.Properties.Resources.resources
+C:\Gábor\Programs\Clickcounter\Clickcounter\obj\Debug\Clickcounter.csproj.GenerateResource.Cache
+C:\Gábor\Programs\Clickcounter\Clickcounter\bin\Debug\Clickcounter.exe
+C:\Gábor\Programs\Clickcounter\Clickcounter\bin\Debug\Clickcounter.pdb
+C:\Gábor\Programs\Clickcounter\Clickcounter\obj\Debug\Clickcounter.exe
+C:\Gábor\Programs\Clickcounter\Clickcounter\obj\Debug\Clickcounter.pdb
+C:\Gábor\Programs\Clickcounter\Clickcounter\obj\Debug\Clickcounter.csprojResolveAssemblyReference.cache
+C:\Gábor\Programs\Clickcounter\Clickcounter\obj\Debug\Clickcounter.Form1.resources
