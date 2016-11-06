@@ -1,0 +1,9 @@
+D:\Diák\Márk\Mozgato\Mozgato\bin\Debug\Mozgato.exe.config
+D:\Diák\Márk\Mozgato\Mozgato\bin\Debug\Mozgato.exe
+D:\Diák\Márk\Mozgato\Mozgato\bin\Debug\Mozgato.pdb
+D:\Diák\Márk\Mozgato\Mozgato\obj\Debug\Mozgato.csprojResolveAssemblyReference.cache
+D:\Diák\Márk\Mozgato\Mozgato\obj\Debug\Mozgato.Form1.resources
+D:\Diák\Márk\Mozgato\Mozgato\obj\Debug\Mozgato.Properties.Resources.resources
+D:\Diák\Márk\Mozgato\Mozgato\obj\Debug\Mozgato.csproj.GenerateResource.Cache
+D:\Diák\Márk\Mozgato\Mozgato\obj\Debug\Mozgato.exe
+D:\Diák\Márk\Mozgato\Mozgato\obj\Debug\Mozgato.pdb
