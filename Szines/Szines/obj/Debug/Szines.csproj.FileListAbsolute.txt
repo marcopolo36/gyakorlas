@@ -1,0 +1,9 @@
+D:\Diák\Márk\Szines\Szines\bin\Debug\Szines.exe.config
+D:\Diák\Márk\Szines\Szines\bin\Debug\Szines.exe
+D:\Diák\Márk\Szines\Szines\bin\Debug\Szines.pdb
+D:\Diák\Márk\Szines\Szines\obj\Debug\Szines.csprojResolveAssemblyReference.cache
+D:\Diák\Márk\Szines\Szines\obj\Debug\Szines.Form1.resources
+D:\Diák\Márk\Szines\Szines\obj\Debug\Szines.Properties.Resources.resources
+D:\Diák\Márk\Szines\Szines\obj\Debug\Szines.csproj.GenerateResource.Cache
+D:\Diák\Márk\Szines\Szines\obj\Debug\Szines.exe
+D:\Diák\Márk\Szines\Szines\obj\Debug\Szines.pdb
