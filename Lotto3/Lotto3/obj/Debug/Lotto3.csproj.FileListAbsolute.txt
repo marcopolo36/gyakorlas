@@ -1,0 +1,8 @@
+D:\Diák\Márk\Lotto3\Lotto3\bin\Debug\Lotto3.exe.config
+D:\Diák\Márk\Lotto3\Lotto3\bin\Debug\Lotto3.exe
+D:\Diák\Márk\Lotto3\Lotto3\bin\Debug\Lotto3.pdb
+D:\Diák\Márk\Lotto3\Lotto3\obj\Debug\Lotto3.Form1.resources
+D:\Diák\Márk\Lotto3\Lotto3\obj\Debug\Lotto3.Properties.Resources.resources
+D:\Diák\Márk\Lotto3\Lotto3\obj\Debug\Lotto3.csproj.GenerateResource.Cache
+D:\Diák\Márk\Lotto3\Lotto3\obj\Debug\Lotto3.exe
+D:\Diák\Márk\Lotto3\Lotto3\obj\Debug\Lotto3.pdb
