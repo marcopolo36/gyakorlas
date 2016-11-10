@@ -37,6 +37,12 @@ namespace Mozgato
                         this.Left = this.Left - 1;
                     }
                     break;
+                case Keys.Right:
+                    if (this.Left < this.ScreenWidth - this.Width )
+                    {
+                        this.Left = this.Left + 1;
+                    }
+                    break;
             }
                 
         }
