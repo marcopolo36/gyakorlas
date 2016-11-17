@@ -1,0 +1,17 @@
+F:\2016-2017\14P\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\bin\Debug\BenzinkutOOP.exe.config
+f:\2016-2017\14P\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\bin\Debug\BenzinkutOOP.exe
+f:\2016-2017\14P\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\bin\Debug\BenzinkutOOP.pdb
+f:\2016-2017\14P\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.csprojResolveAssemblyReference.cache
+f:\2016-2017\14P\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.exe
+f:\2016-2017\14P\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.pdb
+C:\Munka\Oktatás\PETRIK\C#\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\bin\Debug\BenzinkutOOP.exe.config
+C:\Munka\Oktatás\PETRIK\C#\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.exe
+C:\Munka\Oktatás\PETRIK\C#\Programozási nyelvek gyakorlat\5. hét - 2016.09.28\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.pdb
+d:\Diák\Márk\Benzinkut\5\BenzinkutOOP\BenzinkutOOP\bin\Debug\BenzinkutOOP.exe.config
+d:\Diák\Márk\Benzinkut\5\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.exe
+d:\Diák\Márk\Benzinkut\5\BenzinkutOOP\BenzinkutOOP\obj\Debug\BenzinkutOOP.pdb
+d:\Diák\Márk\Benzinkut_console_beadando\BenzinkutOOP\bin\Debug\BenzinkutOOP.exe.config
+d:\Diák\Márk\Benzinkut_console_beadando\BenzinkutOOP\obj\Debug\BenzinkutOOP.exe
+d:\Diák\Márk\Benzinkut_console_beadando\BenzinkutOOP\obj\Debug\BenzinkutOOP.pdb
+d:\Diák\Márk\Benzinkut_console_beadando\BenzinkutOOP\bin\Debug\BenzinkutOOP.exe
+d:\Diák\Márk\Benzinkut_console_beadando\BenzinkutOOP\bin\Debug\BenzinkutOOP.pdb
