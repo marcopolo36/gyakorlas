@@ -1,0 +1,54 @@
+﻿OOP tervezési feladat
+
+Beadás módja: a teljes projektet egy zip/rar/7z/... csomagolva elküldeni a halasz.gabor@petrik.hu címre
+A fájl neve tartalmazza a nevet és az osztályt.
+
+Határidő: 11.06. (vasárnap) 23:59
+
+
+Szimuláljuk egy lift irányítóberendezését!
+
+A liftet a megfelelő emelet beírásával lehet az adott emeletre küldeni.
+A lift azonban nem ugrik azonnal az emeletre, hanem egyesével teszi meg őket.
+Minden emeleten kiírja az aktuális emelet számát a konzolra, és a ▲ ▼ karakterek egyikét,
+ami azt jelzi, hogy épp felfelé vagy lefelé megy a lift.
+
+Tehát pl. ha a 6-ról a 9-re küldjük, akkor
+7 ▲
+8 ▲
+9 ▲
+lesz a kimenet.
+
+Emellett van egy ajtónyitó és ajtózáró gomb is. Nyitott ajtóval a lift nem reagál
+az emeletválasztásra (de hibát sem jelez).
+
+A liftet jelképezze egy osztály, a gombjait pedig egy-egy publikus függvény.
+Az emeletválasztás lehet egyetlen paraméteres függvény.
+Hozzuk létre az osztályt, és teszteljük a működését a main függvényben!
+
+Az eléleti részhez szükséges:
+- Osztálydiagram
+  * Szerkeszthető formában (amiben a diagramkészítő elmentette)
+  ÉS
+  * Képként (png)
+- Pszeudokód vagy folyamatábra az emeletválasztás megoldásáról
+
+
+A gyakorlati értékelés szempontjai:
+- OOP elvek betartása: 
+  * változók/függvények láthatósága
+  * metódusok használata ahol lehet/szükséges
+  * függvények/változók statikussága csak ahol kell
+- Adatstruktúra megfelelősége
+  * minden adatra szükség van a feladat megoldásához?
+  * maradt-e ki fontos adat?
+- Az algoritmus (kód) helyessége
+- Általánosság, paraméterezhetőség
+  * Az osztályba bele vannak-e kódolva a paraméterek? A main függvényben,
+    teszt kódnak nem gond, de lehessen az objektumot más adatokkal is létrehozni.
+- Hibajelzés és kezelés
+- Elegáns kód, dokumentáció
+  * Olvashatóan formázott kód
+  * Beszédes változó és függvény nevek
+
+Kódegyezés (másolás) esetén mindkét tanuló jegye elégtelen!

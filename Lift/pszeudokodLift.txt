@@ -1,0 +1,32 @@
+﻿eljaras emeletValasztas(emelet)
+		
+		ha emelet < o vagy emelet > maxEmelet, akkor:
+			hibajelzés
+		elágazás vége
+		
+		ha nyitottE = hamis, akkor
+			irany=0
+			
+			ha emelet < emeletAktualis, akkor:
+				irany := -1
+			elágazás vége
+			
+			ha emelet > emeletAktualis, akkor:
+				irany := +1
+			elágazás vége
+			
+			ha irany <> 0, akkor:
+				amíg emeletAktualis <> emelet addig:
+					emeletAktualis = emeletAktualis + irany
+					kiír emeletAktualis 
+					ha irany == -1; akkor:
+						kiír ▼,
+					elágazás vége
+					ha irany == +1; akkor:
+						kiír ▲,
+					elágazás vége
+					kiír újsor
+				ciklus vége
+			elágazás vége
+		elágazás vége
+eljárás vége
