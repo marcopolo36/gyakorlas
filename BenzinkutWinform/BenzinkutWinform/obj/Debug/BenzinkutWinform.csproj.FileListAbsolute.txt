@@ -1,0 +1,9 @@
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\bin\Debug\BenzinkutWinform.exe.config
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\obj\Debug\BenzinkutWinform.csprojResolveAssemblyReference.cache
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\obj\Debug\BenzinkutWinform.Form1.resources
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\obj\Debug\BenzinkutWinform.Properties.Resources.resources
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\obj\Debug\BenzinkutWinform.csproj.GenerateResource.Cache
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\bin\Debug\BenzinkutWinform.exe
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\bin\Debug\BenzinkutWinform.pdb
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\obj\Debug\BenzinkutWinform.exe
+D:\Diák\Márk\BenzinkutWinform\BenzinkutWinform\obj\Debug\BenzinkutWinform.pdb
