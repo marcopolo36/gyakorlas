@@ -41,7 +41,7 @@ namespace BenzinkutWinform
        public String LegtobbetTankolo()
         {
             int maxIndex = 0;
-            for (int i = 0; i < l.Count - 1; i++)
+            for (int i = 0; i < l.Count; i++)
             {
                 if (l[i].Mennyiseg > l[maxIndex].Mennyiseg)
                 {
@@ -54,7 +54,7 @@ namespace BenzinkutWinform
         public double AtlagKoltseg()
         {
             double osszeg = 0;
-            for (int i = 0; i<l.Count-1; i++)
+            for (int i = 0; i < l.Count; i++)
             {
                 osszeg += l[i].Koltseg();
             }

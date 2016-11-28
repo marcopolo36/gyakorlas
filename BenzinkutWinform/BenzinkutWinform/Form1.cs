@@ -28,10 +28,23 @@ namespace BenzinkutWinform
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Autos autos = new Autos(textBox1.Text, Convert.ToDouble(numericUpDown1.Value), Convert.ToByte(comboBox1.SelectedIndex));
+            if(! maskedTextBox1.MaskCompleted)
+            {
+                MessageBox.Show("A rendszám adat formailag hibás!");
+                return;
+            }
+
+            Autos autos = new Autos(maskedTextBox1.Text, Convert.ToDouble(numericUpDown1.Value), Convert.ToByte(comboBox1.SelectedIndex));
             autosok.UjAutos(autos);
             label4.Text= autosok.ToString();
             textBox2.Text = autosok.ToString();
         }
+
+        private void tabPage2_Enter(object sender, EventArgs e)
+        {
+            textBox1.Text = autosok.LegtobbetTankolo();
+            textBox3.Text = (autosok.AtlagKoltseg()).ToString();
+        }
+    
     }
 }

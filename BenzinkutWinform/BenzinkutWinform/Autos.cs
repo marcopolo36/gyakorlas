@@ -40,7 +40,7 @@ namespace BenzinkutWinform
 
         public override string ToString()
         {
-            return rendszam + " "+ mennyiseg + " l " + FajtaToString(fajta) + "\r\n";
+            return rendszam + " "+ mennyiseg + " l " + FajtaToString(fajta) + " "+ Koltseg() + "Ft\r\n";
         }
 
         private String FajtaToString(byte fajta)
