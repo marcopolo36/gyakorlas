@@ -71,7 +71,7 @@ namespace Wargame
 
 
         //konstruktor metódus, amivel létrehozható egy példány, és beállíthatók az adott harcos értékei
-        public Harcos (int eletero, string nev, int sebzes, int vedekezes)
+        public Harcos (string nev, int eletero, int sebzes, int vedekezes)
         {
             this.eletero = eletero;
             this.nev = nev;
@@ -84,7 +84,7 @@ namespace Wargame
 
         public override string ToString()
         {
-            return "Életerő: " + eletero + " Név:" + nev + " Sebzés:" + sebzes + " Védekezés:" + vedekezes;
+            return " Név: " + nev + ", Életerő: " + eletero  + ", Sebzés: " + sebzes + ", Védekezés: " + vedekezes;
         }
 
 

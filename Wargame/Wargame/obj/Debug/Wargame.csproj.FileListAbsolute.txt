@@ -1,1 +1,5 @@
 d:\Diák\Márk\wargame\Wargame\Wargame\obj\Debug\Wargame.csprojResolveAssemblyReference.cache
+D:\Diák\Márk\wargame\Wargame\Wargame\bin\Debug\Wargame.exe
+D:\Diák\Márk\wargame\Wargame\Wargame\bin\Debug\Wargame.pdb
+D:\Diák\Márk\wargame\Wargame\Wargame\obj\Debug\Wargame.exe
+D:\Diák\Márk\wargame\Wargame\Wargame\obj\Debug\Wargame.pdb
