@@ -15,19 +15,14 @@ namespace WargameWinForms
         public Form1()
         {
             InitializeComponent();
+            labelSzarmazas.Text = "Nemzetiség";
+            comboBoxHarcosTipusa.SelectedIndex = 0;
+
             //Ez itt kell, hogy a Napló tudja, hova kell írnia az üzeneteket
             Napló.WinFormsNaplóVezérlő = lbxMessages;
             //mezők feltöltése értékekkel
             r = new Random();
             arena = new Arena();
-        }
-
-        private void btnRandomise_Click(object sender, EventArgs e)
-        {
-            //random értékekkel feltöltjük a néven kívüli textboxokat
-            tbHP.Text = r.Next(5, 10).ToString();
-            tbAttack.Text = r.Next(2, 5).ToString();
-            tbDefense.Text = r.Next(2, 5).ToString();
         }
 
         private void btnAddWarrior_Click(object sender, EventArgs e)
@@ -37,26 +32,22 @@ namespace WargameWinForms
             {
                 MessageBox.Show("Rossz Név!");
                 return;
-            }
-            int hp, attack, defense;
-            if (! int.TryParse(tbHP.Text, out hp))
+            }             
+            if (comboBoxHarcosTipusa.SelectedIndex == -1)
             {
-                MessageBox.Show("Rossz Életerő érték!");
+                MessageBox.Show("Rossz érték!");
                 return;
             }
-            if (! int.TryParse(tbAttack.Text, out attack))
+            if (string.IsNullOrWhiteSpace(textBoxSzarmazas.Text))
             {
-                MessageBox.Show("Rossz Támadó érték!");
-                return;
-            }
-            if (! int.TryParse(tbDefense.Text, out defense))
-            {
-                MessageBox.Show("Rossz Védő érték!");
+                MessageBox.Show("Rossz érték!");
                 return;
             }
 
+            Ember ember = new Ember(this.nev, );
+
             //harcos hozzáadása
-            arena.HarcosHozzadasa(tbName.Text, hp, attack, defense);
+            arena.HarcosHozzadasa(harcos);
 
             //szövegdobozok ürítése
             tbName.Text = tbHP.Text = tbAttack.Text = tbDefense.Text = string.Empty;
@@ -95,6 +86,22 @@ namespace WargameWinForms
             foreach (Harcos h in arena.Harcosok)
             {
                 lbxWarriors.Items.Add(h);
+            }
+        }
+
+        private void comboBoxHarcosTipusa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxHarcosTipusa.SelectedText == "Ember")
+            {
+                checkBoxTamadoE.Hide();
+                labelTamadoE.Hide();
+                labelSzarmazas.Text = "Nemzetiség";
+            }
+            else
+            {
+                checkBoxTamadoE.Show();
+                labelTamadoE.Show();
+                labelSzarmazas.Text = "Klán";
             }
         }
     }

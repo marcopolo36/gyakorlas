@@ -15,10 +15,10 @@ namespace Wargame
         //mezők - adattároló tagok. Mindegyik harcos saját értékekkel rendelkezhet.
         //private láthatóság - csak a harcos maga férhet hozzá a mezőhöz, kívülről nem lehet se lekérdezni, se be/átállítani
         //Ha az osztályon belül nem írsz láthatóságot valamire, az alapértelmezetten private lesz.
-        private int eletero;
-        private string nev;
-        private int sebzes;
-        private int vedekezes;
+        protected int eletero;
+        protected string nev;
+        protected int sebzes;
+        protected int vedekezes;
 
         public int Eletero
         {
@@ -60,15 +60,11 @@ namespace Wargame
 
         }
 
-
-
-
-
-
         //tulajdonságok - ellenőrzött hozzáférés a mezőkhöz. A get és set tulajdonképpen metódusok, olyan kódot írunk beléjük, amilyet akarunk.
 
-
-
+        protected Harcos()
+        {
+        }
 
         //konstruktor metódus, amivel létrehozható egy példány, és beállíthatók az adott harcos értékei
         public Harcos (string nev, int eletero, int sebzes, int vedekezes)

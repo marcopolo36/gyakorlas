@@ -43,6 +43,12 @@ namespace Wargame
 
         //metódusok
 
+        public void HarcosHozzadasa(Harcos harcos)
+        {
+            this.harcosok.Add(harcos);
+            Napló.Naplózás($"Hozzáadva: {harcos.ToString()}");
+        }
+
         public void HarcosHozzadasa( string nev, int eletero, int sebzes, int vedekezes)
         {
 
