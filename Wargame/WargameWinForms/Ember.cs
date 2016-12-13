@@ -35,5 +35,34 @@ namespace WargameWinForms
             }
         }
 
+        public override void InkábbTámadj()
+        {
+            //ha 0-ra csökkenne a védekezés, nem hajtjuk végre a módosításokat
+            if (vedekezes == 1)
+            {
+                return;
+            }
+            int novekmeny = r.Next(1, 5);
+            sebzes += novekmeny;
+            vedekezes -= 1;
+            Wargame.Napló.Naplózás($"{nev} inkább támadott, sebzése {novekmeny}, védekezése -1 ponttal változott.");
+
+        }
+
+        //Saját metódus - megnöveli a védekezőértéket, csökkenti a támadóértéket
+        public override void InkábbVédekezz()
+        {
+            //ha 0-ra csökkenne a támadás, nem hajtjuk végre a módosításokat
+            if (sebzes == 1)
+            {
+                return;
+            }
+
+            int novekmeny = r.Next(1, 5);
+            vedekezes += novekmeny;
+            sebzes -= 1;
+            Wargame.Napló.Naplózás($"{nev} inkább védekezett, védekezése {novekmeny}, sebzése -1 ponttal változott.");
+        }
+
     }
 }

@@ -85,7 +85,7 @@ namespace Wargame
 
 
         //Saját metódus - megnöveli a támadóértéket, csökkenti a védekezőértéket
-        public void InkábbTámadj()
+        public virtual void InkábbTámadj()
         {
             //ha 0-ra csökkenne a védekezés, nem hajtjuk végre a módosításokat
             if (vedekezes == 1) {
@@ -98,7 +98,7 @@ namespace Wargame
         }
 
         //Saját metódus - megnöveli a védekezőértéket, csökkenti a támadóértéket
-        public void InkábbVédekezz()
+        public virtual void InkábbVédekezz()
         {
             //ha 0-ra csökkenne a támadás, nem hajtjuk végre a módosításokat
             if (sebzes == 1)

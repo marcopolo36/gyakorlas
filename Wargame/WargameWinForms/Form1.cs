@@ -32,25 +32,37 @@ namespace WargameWinForms
             {
                 MessageBox.Show("Rossz Név!");
                 return;
-            }             
-            if (comboBoxHarcosTipusa.SelectedIndex == -1)
-            {
-                MessageBox.Show("Rossz érték!");
-                return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxSzarmazas.Text))
             {
                 MessageBox.Show("Rossz érték!");
                 return;
             }
 
-            Ember ember = new Ember(this.nev, );
+            if (comboBoxHarcosTipusa.SelectedIndex == -1)
+            {
+                MessageBox.Show("Rossz érték!");
+                return;
+            }
 
+            
             //harcos hozzáadása
-            arena.HarcosHozzadasa(harcos);
+            if ((string)comboBoxHarcosTipusa.SelectedItem == "Ember")
+            {
+                Ember ember = new Ember(tbName.Text, textBoxSzarmazas.Text, checkBoxTamadoE.Checked);
+                arena.HarcosHozzadasa(ember);
+            }
 
+            if ((string)comboBoxHarcosTipusa.SelectedItem == "Szörny")
+            {
+                int OsszErtek = r.Next(8, 13);
+                Szorny szorny = new Szorny(tbName.Text, textBoxSzarmazas.Text, OsszErtek);
+                arena.HarcosHozzadasa(szorny);
+            }
+            
             //szövegdobozok ürítése
-            tbName.Text = tbHP.Text = tbAttack.Text = tbDefense.Text = string.Empty;
+            tbName.Text = textBoxSzarmazas.Text = string.Empty;
 
             //lista frissítése
             RefreshWarriorListBox();
@@ -91,16 +103,16 @@ namespace WargameWinForms
 
         private void comboBoxHarcosTipusa_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxHarcosTipusa.SelectedText == "Ember")
-            {
-                checkBoxTamadoE.Hide();
-                labelTamadoE.Hide();
-                labelSzarmazas.Text = "Nemzetiség";
-            }
-            else
+            if ((string)comboBoxHarcosTipusa.SelectedItem == "Ember")
             {
                 checkBoxTamadoE.Show();
                 labelTamadoE.Show();
+                labelSzarmazas.Text = "Nemzetiség";
+            }
+            else
+            {               
+                checkBoxTamadoE.Hide();
+                labelTamadoE.Hide();
                 labelSzarmazas.Text = "Klán";
             }
         }
