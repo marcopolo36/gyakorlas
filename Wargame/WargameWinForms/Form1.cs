@@ -116,5 +116,13 @@ namespace WargameWinForms
                 labelSzarmazas.Text = "Klán";
             }
         }
+
+        private void buttonVeletlen_Click(object sender, EventArgs e)
+        {
+            if ((string)comboBoxHarcosTipusa.SelectedItem == "Szörny")
+            { 
+                tbName.Text = Szornynevek.NevGeneralas();
+            }
+        }
     }
 }

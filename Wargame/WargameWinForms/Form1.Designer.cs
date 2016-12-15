@@ -34,17 +34,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddWarrior = new System.Windows.Forms.Button();
             this.tbName = new System.Windows.Forms.TextBox();
+            this.labelFaj = new System.Windows.Forms.Label();
+            this.comboBoxHarcosTipusa = new System.Windows.Forms.ComboBox();
+            this.labelTamadoE = new System.Windows.Forms.Label();
+            this.checkBoxTamadoE = new System.Windows.Forms.CheckBox();
+            this.labelSzarmazas = new System.Windows.Forms.Label();
+            this.textBoxSzarmazas = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnBattle = new System.Windows.Forms.Button();
             this.btnDeleteSelected = new System.Windows.Forms.Button();
             this.lbxMessages = new System.Windows.Forms.ListBox();
             this.lbxWarriors = new System.Windows.Forms.ListBox();
-            this.labelTamadoE = new System.Windows.Forms.Label();
-            this.checkBoxTamadoE = new System.Windows.Forms.CheckBox();
-            this.labelFaj = new System.Windows.Forms.Label();
-            this.comboBoxHarcosTipusa = new System.Windows.Forms.ComboBox();
-            this.labelSzarmazas = new System.Windows.Forms.Label();
-            this.textBoxSzarmazas = new System.Windows.Forms.TextBox();
+            this.buttonVeletlen = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -87,6 +88,7 @@
             this.tableLayoutPanel1.Controls.Add(this.checkBoxTamadoE, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelSzarmazas, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSzarmazas, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.buttonVeletlen, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -125,6 +127,61 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(100, 20);
             this.tbName.TabIndex = 4;
+            // 
+            // labelFaj
+            // 
+            this.labelFaj.AutoSize = true;
+            this.labelFaj.Location = new System.Drawing.Point(3, 48);
+            this.labelFaj.Name = "labelFaj";
+            this.labelFaj.Size = new System.Drawing.Size(21, 13);
+            this.labelFaj.TabIndex = 8;
+            this.labelFaj.Text = "Faj";
+            // 
+            // comboBoxHarcosTipusa
+            // 
+            this.comboBoxHarcosTipusa.FormattingEnabled = true;
+            this.comboBoxHarcosTipusa.Items.AddRange(new object[] {
+            "Ember",
+            "Szörny"});
+            this.comboBoxHarcosTipusa.Location = new System.Drawing.Point(275, 51);
+            this.comboBoxHarcosTipusa.Name = "comboBoxHarcosTipusa";
+            this.comboBoxHarcosTipusa.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxHarcosTipusa.TabIndex = 9;
+            this.comboBoxHarcosTipusa.SelectedIndexChanged += new System.EventHandler(this.comboBoxHarcosTipusa_SelectedIndexChanged);
+            // 
+            // labelTamadoE
+            // 
+            this.labelTamadoE.AutoSize = true;
+            this.labelTamadoE.Location = new System.Drawing.Point(3, 144);
+            this.labelTamadoE.Name = "labelTamadoE";
+            this.labelTamadoE.Size = new System.Drawing.Size(61, 13);
+            this.labelTamadoE.TabIndex = 6;
+            this.labelTamadoE.Text = "Támadó-e?";
+            // 
+            // checkBoxTamadoE
+            // 
+            this.checkBoxTamadoE.AutoSize = true;
+            this.checkBoxTamadoE.Location = new System.Drawing.Point(275, 147);
+            this.checkBoxTamadoE.Name = "checkBoxTamadoE";
+            this.checkBoxTamadoE.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxTamadoE.TabIndex = 7;
+            this.checkBoxTamadoE.UseVisualStyleBackColor = true;
+            // 
+            // labelSzarmazas
+            // 
+            this.labelSzarmazas.AutoSize = true;
+            this.labelSzarmazas.Location = new System.Drawing.Point(3, 96);
+            this.labelSzarmazas.Name = "labelSzarmazas";
+            this.labelSzarmazas.Size = new System.Drawing.Size(64, 13);
+            this.labelSzarmazas.TabIndex = 10;
+            this.labelSzarmazas.Text = "[Szarmazás]";
+            // 
+            // textBoxSzarmazas
+            // 
+            this.textBoxSzarmazas.Location = new System.Drawing.Point(275, 99);
+            this.textBoxSzarmazas.Name = "textBoxSzarmazas";
+            this.textBoxSzarmazas.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSzarmazas.TabIndex = 11;
             // 
             // tabPage2
             // 
@@ -176,60 +233,15 @@
             this.lbxWarriors.Size = new System.Drawing.Size(184, 186);
             this.lbxWarriors.TabIndex = 0;
             // 
-            // labelTamadoE
+            // buttonVeletlen
             // 
-            this.labelTamadoE.AutoSize = true;
-            this.labelTamadoE.Location = new System.Drawing.Point(3, 144);
-            this.labelTamadoE.Name = "labelTamadoE";
-            this.labelTamadoE.Size = new System.Drawing.Size(61, 13);
-            this.labelTamadoE.TabIndex = 6;
-            this.labelTamadoE.Text = "Támadó-e?";
-            // 
-            // checkBoxTamadoE
-            // 
-            this.checkBoxTamadoE.AutoSize = true;
-            this.checkBoxTamadoE.Location = new System.Drawing.Point(275, 147);
-            this.checkBoxTamadoE.Name = "checkBoxTamadoE";
-            this.checkBoxTamadoE.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxTamadoE.TabIndex = 7;
-            this.checkBoxTamadoE.UseVisualStyleBackColor = true;
-            // 
-            // labelFaj
-            // 
-            this.labelFaj.AutoSize = true;
-            this.labelFaj.Location = new System.Drawing.Point(3, 48);
-            this.labelFaj.Name = "labelFaj";
-            this.labelFaj.Size = new System.Drawing.Size(21, 13);
-            this.labelFaj.TabIndex = 8;
-            this.labelFaj.Text = "Faj";
-            // 
-            // comboBoxHarcosTipusa
-            // 
-            this.comboBoxHarcosTipusa.FormattingEnabled = true;
-            this.comboBoxHarcosTipusa.Items.AddRange(new object[] {
-            "Ember",
-            "Szörny"});
-            this.comboBoxHarcosTipusa.Location = new System.Drawing.Point(275, 51);
-            this.comboBoxHarcosTipusa.Name = "comboBoxHarcosTipusa";
-            this.comboBoxHarcosTipusa.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxHarcosTipusa.TabIndex = 9;
-            this.comboBoxHarcosTipusa.SelectedIndexChanged += new System.EventHandler(this.comboBoxHarcosTipusa_SelectedIndexChanged);
-            // 
-            // labelSzarmazas
-            // 
-            this.labelSzarmazas.AutoSize = true;
-            this.labelSzarmazas.Location = new System.Drawing.Point(3, 96);
-            this.labelSzarmazas.Name = "labelSzarmazas";
-            this.labelSzarmazas.Size = new System.Drawing.Size(64, 13);
-            this.labelSzarmazas.TabIndex = 10;
-            this.labelSzarmazas.Text = "[Szarmazás]";
-            // 
-            // textBoxSzarmazas
-            // 
-            this.textBoxSzarmazas.Location = new System.Drawing.Point(275, 99);
-            this.textBoxSzarmazas.Name = "textBoxSzarmazas";
-            this.textBoxSzarmazas.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSzarmazas.TabIndex = 11;
+            this.buttonVeletlen.Location = new System.Drawing.Point(275, 195);
+            this.buttonVeletlen.Name = "buttonVeletlen";
+            this.buttonVeletlen.Size = new System.Drawing.Size(264, 23);
+            this.buttonVeletlen.TabIndex = 12;
+            this.buttonVeletlen.Text = "Véletlenszerű értékek";
+            this.buttonVeletlen.UseVisualStyleBackColor = true;
+            this.buttonVeletlen.Click += new System.EventHandler(this.buttonVeletlen_Click);
             // 
             // Form1
             // 
@@ -267,6 +279,7 @@
         private System.Windows.Forms.ComboBox comboBoxHarcosTipusa;
         private System.Windows.Forms.Label labelSzarmazas;
         private System.Windows.Forms.TextBox textBoxSzarmazas;
+        private System.Windows.Forms.Button buttonVeletlen;
     }
 }
 
