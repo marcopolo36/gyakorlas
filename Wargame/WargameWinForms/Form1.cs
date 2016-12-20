@@ -28,7 +28,7 @@ namespace WargameWinForms
         private void btnAddWarrior_Click(object sender, EventArgs e)
         {
             //van-e szöveg a textboxokban, és átalakítható-e. Ha gond van, jelezzük, visszatér a metódus
-            if (string.IsNullOrWhiteSpace(tbName.Text))
+            /*if (string.IsNullOrWhiteSpace(tbName.Text))
             {
                 MessageBox.Show("Rossz Név!");
                 return;
@@ -38,7 +38,7 @@ namespace WargameWinForms
             {
                 MessageBox.Show("Rossz érték!");
                 return;
-            }
+            }*/
 
             if (comboBoxHarcosTipusa.SelectedIndex == -1)
             {
@@ -49,16 +49,38 @@ namespace WargameWinForms
             
             //harcos hozzáadása
             if ((string)comboBoxHarcosTipusa.SelectedItem == "Ember")
-            {
-                Ember ember = new Ember(tbName.Text, textBoxSzarmazas.Text, checkBoxTamadoE.Checked);
-                arena.HarcosHozzadasa(ember);
+            {   
+                try
+                { 
+                    Ember ember = new Ember(tbName.Text, textBoxSzarmazas.Text, checkBoxTamadoE.Checked);
+                    arena.HarcosHozzadasa(ember);
+                }
+                catch (ArgumentNullException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                catch (ArgumentException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
             if ((string)comboBoxHarcosTipusa.SelectedItem == "Szörny")
             {
                 int OsszErtek = r.Next(8, 13);
-                Szorny szorny = new Szorny(tbName.Text, textBoxSzarmazas.Text, OsszErtek);
-                arena.HarcosHozzadasa(szorny);
+                try
+                {
+                    Szorny szorny = new Szorny(tbName.Text, textBoxSzarmazas.Text, OsszErtek);
+                    arena.HarcosHozzadasa(szorny);
+                }
+                catch (ArgumentNullException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                catch (ArgumentException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             
             //szövegdobozok ürítése
@@ -86,7 +108,14 @@ namespace WargameWinForms
             //Minden elem törlése
             lbxMessages.Items.Clear();
             //csata indítása
-            arena.Csata();
+            try
+            {
+                arena.Csata();
+            }
+            catch ( Arena.CsataNemIndithatoException ex)
+            {
+                MessageBox.Show(ex.Message);                  
+            }
             //lista frissítése
             RefreshWarriorListBox();
         }

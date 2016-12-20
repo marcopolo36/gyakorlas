@@ -39,9 +39,6 @@ namespace WargameWinForms
                 nevek = nevek.Distinct().ToList();
 
             }
-            
         }
     }
-
-
 }

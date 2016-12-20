@@ -18,7 +18,15 @@ namespace WargameWinForms
 
 
         public Ember(string nev, string nemzetiseg, bool tamadoE)
-        {
+        {   
+            if ( nev == String.Empty || nemzetiseg == String.Empty)
+            {
+                throw new ArgumentException();
+            }
+            if (nev == null || nemzetiseg == null)
+            {
+                throw new ArgumentNullException();
+            }
             this.nev = nev;
             this.nemzetiseg = nemzetiseg;
             this.eletero = r.Next(4,7);

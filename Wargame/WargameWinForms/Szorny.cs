@@ -17,6 +17,14 @@ namespace WargameWinForms
 
         public Szorny( string nev, string klan, int OsszErtek )
         {
+            if (nev == String.Empty || klan == String.Empty || OsszErtek < 6 || OsszErtek > 12 )
+            {
+                throw new ArgumentException();
+            }
+            if (nev == null || klan == null)
+            {
+                throw new ArgumentNullException();
+            }
             this.nev = nev;
             this.klan = klan;
             this.eletero = r.Next(4,7);

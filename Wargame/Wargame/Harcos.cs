@@ -10,7 +10,7 @@ namespace Wargame
     //objektum jön létre a memóriában. Az osztály minden példánya ugyanazokkal az adattároló 
     //rekeszekkel (mező) és képességekkel (metódus) rendelkezik. A konkrét adatok különbözőek 
     //lehetnek minden egyes példányban.
-    class Harcos
+    abstract class Harcos
     {
         //mezők - adattároló tagok. Mindegyik harcos saját értékekkel rendelkezhet.
         //private láthatóság - csak a harcos maga férhet hozzá a mezőhöz, kívülről nem lehet se lekérdezni, se be/átállítani
@@ -62,6 +62,7 @@ namespace Wargame
 
         //tulajdonságok - ellenőrzött hozzáférés a mezőkhöz. A get és set tulajdonképpen metódusok, olyan kódot írunk beléjük, amilyet akarunk.
 
+        /*  
         protected Harcos()
         {
         }
@@ -74,9 +75,10 @@ namespace Wargame
             this.sebzes = sebzes;
             this.vedekezes = vedekezes;
         }
+        */
 
         //A ToString minden objektumon (példányon) hívható, visszaad egy szöveget.
-        //Az override kulcsszó itt fontos - jelentését később tárgyaljuk
+        //Az override kulcsszó itt fontos - jelentését később tárgyaljuk 
 
         public override string ToString()
         {
@@ -85,8 +87,8 @@ namespace Wargame
 
 
         //Saját metódus - megnöveli a támadóértéket, csökkenti a védekezőértéket
-        public virtual void InkábbTámadj()
-        {
+        public abstract void InkábbTámadj();
+        /*{
             //ha 0-ra csökkenne a védekezés, nem hajtjuk végre a módosításokat
             if (vedekezes == 1) {
                 return;
@@ -95,11 +97,11 @@ namespace Wargame
             sebzes += 1;
             vedekezes -= 1;
 
-        }
+        }*/
 
         //Saját metódus - megnöveli a védekezőértéket, csökkenti a támadóértéket
-        public virtual void InkábbVédekezz()
-        {
+        public abstract void InkábbVédekezz();
+       /*{
             //ha 0-ra csökkenne a támadás, nem hajtjuk végre a módosításokat
             if (sebzes == 1)
             {
@@ -109,6 +111,6 @@ namespace Wargame
             vedekezes += 1;
             sebzes -= 1;
 
-        }
+        }*/
     }
 }

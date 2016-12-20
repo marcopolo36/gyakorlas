@@ -6,6 +6,15 @@ namespace Wargame
     //ez az osztály felügyeli a harcokat és harcosokat
     class Arena
     {
+        public class CsataNemIndithatoException : System.Exception
+        {   
+            private string message = "A csata nem indítható!";
+
+            public override string Message { get { return message; } }
+            
+            public CsataNemIndithatoException() 
+            {}
+        }
         //random típusú mező
 
         private Random r;
@@ -49,13 +58,13 @@ namespace Wargame
             Napló.Naplózás($"Hozzáadva: {harcos.ToString()}");
         }
 
-        public void HarcosHozzadasa( string nev, int eletero, int sebzes, int vedekezes)
+       /* public void HarcosHozzadasa(string nev, int eletero, int sebzes, int vedekezes)
         {
 
-            Harcos harcos = new Harcos( nev, eletero, sebzes, vedekezes);
+            Harcos harcos = new Harcos(nev, eletero, sebzes, vedekezes);
             this.harcosok.Add(harcos);
             Napló.Naplózás($"Hozzáadva: {harcos.ToString()}");
-        }
+        }*/
 
         public void HarcosTorlese(Harcos harcos)
         {
@@ -64,7 +73,12 @@ namespace Wargame
         }
 
         public void Csata()
-        {
+        {   
+            if (harcosok.Count < 2)
+            {
+                throw new CsataNemIndithatoException();
+            }
+
             Napló.Naplózás("Elindult a csata!");
             int kör = 0;
             //addig tart a csata, amíg van túlélő.
