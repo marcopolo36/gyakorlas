@@ -45,6 +45,8 @@ build/
 *.tli
 *.tlh
 *.tmp
+*.cache
+*.exe
 *.tmp_proj
 *.log
 *.vspscc
