@@ -23,3 +23,10 @@ D:\Diák\Márk\wargame\Wargame\WargameWinForms\obj\Debug\WargameWinForms.Propert
 D:\Diák\Márk\wargame\Wargame\WargameWinForms\obj\Debug\WargameWinForms.csproj.GenerateResource.Cache
 d:\Diák\Márk\wargame\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.exe
 d:\Diák\Márk\wargame\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.pdb
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\bin\Debug\WargameWinForms.exe
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\bin\Debug\WargameWinForms.pdb
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.Form1.resources
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.Properties.Resources.resources
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.csproj.GenerateResource.Cache
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.exe
+C:\Users\gargo\Desktop\gyakorlas\Wargame házi\WargameWinForms\obj\Debug\WargameWinForms.pdb

@@ -127,7 +127,7 @@ namespace Wargame
         {
             //Később, kivételkezelésnél: null-ellenőrzés és ellenőrzés, hogy a két harcos nem ugyanaz-e (equals override is lehet)
             //a sebzések és védekezések egy 0-4, 0-2 értékkel nőnek az alappontokhoz képest
-            int támadás = támadó.Sebzes + r.Next(0, 4);
+            int támadás = támadó.Fegyver.Sebez() + r.Next(0, 4);
             Napló.Naplózás($"{támadó.Nev} támadása: {támadás} pont.");
 
             int védés = védő.Vedekezes + r.Next(0, 2);

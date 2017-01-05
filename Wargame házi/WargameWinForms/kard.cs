@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WargameWinForms
 {
-    class Kard : Fegyver
+    class Kard : Wargame.Fegyver
     {
 
         public override int Sebez()

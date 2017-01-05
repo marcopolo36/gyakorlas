@@ -19,7 +19,7 @@ namespace Wargame
         protected string nev;
         protected int sebzes;
         protected int vedekezes;
-        protected WargameWinForms.Fegyver fegyver;
+        private Fegyver fegyver;
 
         public int Eletero
         {
@@ -58,6 +58,14 @@ namespace Wargame
                 return vedekezes;
             }
 
+        }
+
+        public Fegyver Fegyver
+        {
+            get
+            {
+                return fegyver;
+            }
         }
 
         //tulajdonságok - ellenőrzött hozzáférés a mezőkhöz. A get és set tulajdonképpen metódusok, olyan kódot írunk beléjük, amilyet akarunk.

@@ -29,20 +29,20 @@ namespace WargameWinForms
             this.klan = klan;
             this.eletero = r.Next(4,7);
             this.sebzes = r.Next(3, (OsszErtek - 3)+1);
-            this.vedekezes = OsszErtek - this.sebzes;
-            fegyver = new Ij();
+            this.Vedekezes1 = OsszErtek - this.sebzes;
+            Fegyver = new Ij();
         }
 
         public override void InkábbTámadj()
         {
             //ha 0-ra csökkenne a védekezés, nem hajtjuk végre a módosításokat
-            if (vedekezes == 1)
+            if (Vedekezes1 == 1)
             {
                 return;
             }
 
             sebzes += 2;
-            vedekezes -= 1;
+            Vedekezes1 -= 1;
             Wargame.Napló.Naplózás($"{nev} inkább támadott, sebzése +2, védekezése -1 ponttal változott.");
 
         }
@@ -56,7 +56,7 @@ namespace WargameWinForms
                 return;
             }
 
-            vedekezes += 2;
+            Vedekezes1 += 2;
             sebzes -= 1;
             Wargame.Napló.Naplózás($"{nev} inkább védekezett, védekezése +2, sebzése -1 ponttal változott.");
 

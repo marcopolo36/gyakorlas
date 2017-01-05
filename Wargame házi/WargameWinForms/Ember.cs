@@ -31,8 +31,8 @@ namespace WargameWinForms
             this.nemzetiseg = nemzetiseg;
             this.eletero = r.Next(4,7);
             this.sebzes = r.Next(3, 6);
-            this.vedekezes = r.Next(3, 6);
-            fegyver = new Kard();
+            this.Vedekezes1 = r.Next(3, 6);
+            Fegyver = new Kard();
 
             if (tamadoE == true)
             {
@@ -40,20 +40,20 @@ namespace WargameWinForms
             }
             else
             {
-                this.vedekezes += 4;
+                this.Vedekezes1 += 4;
             }
         }
 
         public override void InkábbTámadj()
         {
             //ha 0-ra csökkenne a védekezés, nem hajtjuk végre a módosításokat
-            if (vedekezes == 1)
+            if (Vedekezes1 == 1)
             {
                 return;
             }
             int novekmeny = r.Next(1, 5);
             sebzes += novekmeny;
-            vedekezes -= 1;
+            Vedekezes1 -= 1;
             Wargame.Napló.Naplózás($"{nev} inkább támadott, sebzése {novekmeny}, védekezése -1 ponttal változott.");
 
         }
@@ -68,7 +68,7 @@ namespace WargameWinForms
             }
 
             int novekmeny = r.Next(1, 5);
-            vedekezes += novekmeny;
+            Vedekezes1 += novekmeny;
             sebzes -= 1;
             Wargame.Napló.Naplózás($"{nev} inkább védekezett, védekezése {novekmeny}, sebzése -1 ponttal változott.");
         }

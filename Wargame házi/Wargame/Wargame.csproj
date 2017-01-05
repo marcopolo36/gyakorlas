@@ -39,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arena.cs" />
+    <Compile Include="Fegyver.cs" />
     <Compile Include="Harcos.cs" />
     <Compile Include="Naplo.cs" />
     <Compile Include="Program.cs" />
