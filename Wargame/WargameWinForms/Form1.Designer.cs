@@ -40,22 +40,26 @@
             this.checkBoxTamadoE = new System.Windows.Forms.CheckBox();
             this.labelSzarmazas = new System.Windows.Forms.Label();
             this.textBoxSzarmazas = new System.Windows.Forms.TextBox();
+            this.buttonVeletlen = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnBattle = new System.Windows.Forms.Button();
             this.btnDeleteSelected = new System.Windows.Forms.Button();
             this.lbxMessages = new System.Windows.Forms.ListBox();
             this.lbxWarriors = new System.Windows.Forms.ListBox();
-            this.buttonVeletlen = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lbxStatisztika = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -183,6 +187,16 @@
             this.textBoxSzarmazas.Size = new System.Drawing.Size(100, 20);
             this.textBoxSzarmazas.TabIndex = 11;
             // 
+            // buttonVeletlen
+            // 
+            this.buttonVeletlen.Location = new System.Drawing.Point(275, 195);
+            this.buttonVeletlen.Name = "buttonVeletlen";
+            this.buttonVeletlen.Size = new System.Drawing.Size(264, 23);
+            this.buttonVeletlen.TabIndex = 12;
+            this.buttonVeletlen.Text = "Véletlenszerű értékek";
+            this.buttonVeletlen.UseVisualStyleBackColor = true;
+            this.buttonVeletlen.Click += new System.EventHandler(this.buttonVeletlen_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.btnBattle);
@@ -233,15 +247,24 @@
             this.lbxWarriors.Size = new System.Drawing.Size(184, 186);
             this.lbxWarriors.TabIndex = 0;
             // 
-            // buttonVeletlen
+            // tabPage3
             // 
-            this.buttonVeletlen.Location = new System.Drawing.Point(275, 195);
-            this.buttonVeletlen.Name = "buttonVeletlen";
-            this.buttonVeletlen.Size = new System.Drawing.Size(264, 23);
-            this.buttonVeletlen.TabIndex = 12;
-            this.buttonVeletlen.Text = "Véletlenszerű értékek";
-            this.buttonVeletlen.UseVisualStyleBackColor = true;
-            this.buttonVeletlen.Click += new System.EventHandler(this.buttonVeletlen_Click);
+            this.tabPage3.Controls.Add(this.lbxStatisztika);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(550, 228);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Statisztika";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // lbxStatisztika
+            // 
+            this.lbxStatisztika.FormattingEnabled = true;
+            this.lbxStatisztika.Location = new System.Drawing.Point(0, -2);
+            this.lbxStatisztika.Name = "lbxStatisztika";
+            this.lbxStatisztika.Size = new System.Drawing.Size(452, 225);
+            this.lbxStatisztika.TabIndex = 0;
             // 
             // Form1
             // 
@@ -256,6 +279,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -280,6 +304,8 @@
         private System.Windows.Forms.Label labelSzarmazas;
         private System.Windows.Forms.TextBox textBoxSzarmazas;
         private System.Windows.Forms.Button buttonVeletlen;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.ListBox lbxStatisztika;
     }
 }
 

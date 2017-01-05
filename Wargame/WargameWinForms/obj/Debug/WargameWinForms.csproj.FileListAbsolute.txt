@@ -21,3 +21,11 @@ D:\Diák\Márk\wargame\Wargame\WargameWinForms\obj\Debug\WargameWinForms.csprojR
 D:\Diák\Márk\wargame\Wargame\WargameWinForms\obj\Debug\WargameWinForms.Form1.resources
 D:\Diák\Márk\wargame\Wargame\WargameWinForms\obj\Debug\WargameWinForms.Properties.Resources.resources
 D:\Diák\Márk\wargame\Wargame\WargameWinForms\obj\Debug\WargameWinForms.csproj.GenerateResource.Cache
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\bin\Debug\WargameWinForms.exe
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\bin\Debug\WargameWinForms.pdb
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\obj\Debug\WargameWinForms.csprojResolveAssemblyReference.cache
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\obj\Debug\WargameWinForms.Form1.resources
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\obj\Debug\WargameWinForms.Properties.Resources.resources
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\obj\Debug\WargameWinForms.csproj.GenerateResource.Cache
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\obj\Debug\WargameWinForms.exe
+C:\Users\gargo\Desktop\gyakorlas\Wargame\WargameWinForms\obj\Debug\WargameWinForms.pdb

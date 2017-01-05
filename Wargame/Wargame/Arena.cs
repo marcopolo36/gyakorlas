@@ -119,7 +119,7 @@ namespace Wargame
             {
                 Napló.Naplózás($"Véget ért a csata, a győztes: {harcosok[0].ToString()}!");
             }
-
+            
         }
 
         //private metódus: csak az Arena osztályból lehet hívni.

@@ -117,6 +117,8 @@ namespace WargameWinForms
                 MessageBox.Show(ex.Message);                  
             }
             //lista frissítése
+            string lastRow = lbxMessages.Items[lbxMessages.Items.Count - 1].ToString();
+            lbxStatisztika.Items.Add(lastRow);
             RefreshWarriorListBox();
         }
 
