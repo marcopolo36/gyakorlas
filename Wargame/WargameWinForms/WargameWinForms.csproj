@@ -53,6 +53,7 @@
     <Compile Include="..\Wargame\Naplo.cs">
       <Link>Naplo.cs</Link>
     </Compile>
+    <Compile Include="FajlAdatKezelo.cs" />
     <Compile Include="Ember.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

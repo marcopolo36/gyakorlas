@@ -9,8 +9,6 @@ namespace WargameWinForms
     {
         void Mentes(List<string> lista);
 
-        List<string> Betoltes();
-
-        
+        List<string> Betoltes();        
     }
 }

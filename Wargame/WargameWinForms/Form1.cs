@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Wargame;
 
@@ -9,7 +10,7 @@ namespace WargameWinForms
         //Mezők (minden Form1 példány tartalmazni fog egyet-egyet)
         private Random r;
         private Arena arena;
-
+        private FajlAdatKezelo adatKezelo = new FajlAdatKezelo();
 
         //konstruktor
         public Form1()
@@ -154,6 +155,38 @@ namespace WargameWinForms
             { 
                 tbName.Text = Szornynevek.NevGeneralas();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            List<string> lista = new List<string>();
+
+            for (int i = 0; i < lbxStatisztika.Items.Count; i++)
+            {
+                lista.Add(lbxStatisztika.Items[i].ToString());
+            }
+            adatKezelo.Mentes(lista);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lbxStatisztika.Items.Clear();
+
+            List<string> lista;
+            try
+            {
+                lista = adatKezelo.Betoltes();
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    lbxStatisztika.Items.Add(lista[i]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nincs korábbi statisztika!");
+            }
+
         }
     }
 }
